@@ -5,4 +5,8 @@ router.get('/', function(req, res, next) {
   res.render('books', { title: 'All Books' });
 });
 
+router.get('/new', function(req, res, next) {
+  res.render('booksNew', { title: 'New Book' });
+});
+
 module.exports = router;
